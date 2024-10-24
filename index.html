@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            margin-left: 550px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            margin-left: 550px;
+        }
+        button {
+            margin-left: 600px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3><sup>0</sup>C to <sup>0</sup>F Converter</h3>
+    <input type="text" id="input1" placeholder="temp in celcius">
+    <div>
+    <button onclick="convert()">convert</button>
+</div>
+    <input type="text" id="input2" placeholder="temp in farenheit" readonly>
+</body>
+</html>
+<script>
+    
+    
+    function convert(params) {
+        let inputOne = +(document.getElementById('input1').value)
+        input2.value = `${celFar(inputOne)}F`
+    }
+    function celFar(celcius) {
+        let ans = celcius * 9/5 + 32
+        return ans 
+    }
+
+
+</script>
